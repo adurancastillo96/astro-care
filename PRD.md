@@ -210,13 +210,3 @@ To anchor the clinical thresholds, avatar state transitions, and demo simulation
 | **Spaceflight Radiation & Dosimetry Datasets (OSDR / RadLab)** | Cabin and EVA radiation dose rates across LEO and deep-space missions.
 
 | • Adds a passive environmental radiation exposure modifier to the **Space** and **Moon** GO/NO-GO risk briefing. |
-
----
-
-## 6. Hackathon Implementation Roadmap (48-Hour MVP)
-
-1. **Scaffold Monorepo (`Hours 0–4`):** Initialize `pnpm` + `Turborepo` with `apps/web`, `apps/habitat-server`, and `packages/clinical-engine`. Configure SQLite + WebSocket LAN broadcast and PWA offline service worker.
-2. **Build Clinical & GO/NO-GO Engine (`Hours 4–10`):** Implement unit-tested NEWS2 scoring, biological homeostasis decay timers, and Earth/Space/Moon GO/NO-GO rules in `packages/clinical-engine`, seeded with OSDR baseline JSON fixtures.
-3. **Develop Nintendogs-Style Avatar & Care Dock (`Hours 10–22`):** Integrate Rive/SVG reactive astronaut avatar states mapped to NEWS2 bands, plus the 5 biological action buttons (`Food`, `Water`, `Physical Activity`, `Defecation`, `Urination`) with immediate visual feedback.
-4. **Add Crew LAN Roster, Cognitive Checklist & Mini-Game (`Hours 22–32`):** Build the multi-crew LAN status view, peer ACVPU/cognitive checklist, and 15-second reaction mini-game.
-5. **Polish Demo Scenarios & Judge Mode (`Hours 32–44`):** Add a one-click **"Simulate Spaceflight Anomaly"** toggle (e.g., *Lunar EVA Hypoxia & Dehydration*) using OSDR-inspired telemetry to demonstrate live avatar deterioration, LAN crew alerting, countermeasure guidance, and `NO-GO` -> `GO` recovery in real time.
